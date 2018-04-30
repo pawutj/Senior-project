@@ -26,6 +26,44 @@ XGBR to predict diff from Trend
 -77.3231307754
 ################################################################################
 ##########################4.Adjust Data from corr###################################
+Corr method
+455201_ maxtemp
+{'metric': 'quantile', 'window': 51, 'quant': 0.050000000000000003, 'corr': 0.55974843761717563, 'diff': 52, 'method': <function <lambda> at 0x7fa183b5e5f0>}
+455201_dewp
+{'metric': 'range', 'window': 47, 'quant': None, 'corr': -0.66171905265793962, 'diff': 0, 'method': <function <lambda> at 0x7fa180317e60>}
+455201_meanrh
+{'metric': 'range', 'window': 49, 'quant': None, 'corr': -0.7306442499361181, 'diff': 0, 'method': <function <lambda> at 0x7fa183b5eaa0>}
+455201_meantemp
+{'metric': 'range', 'window': 49, 'quant': None, 'corr': -0.57342531558431364, 'diff': 52, 'method': <function <lambda> at 0x7fa183b5e0c8>}
+455201_mintemp
+{'metric': 'quantile', 'window': 47, 'quant': 0.65000000000000013, 'corr': -0.63133952430851747, 'diff': 1, 'method': <function <lambda> at 0x7fa180307ed8>}
+455201_rain
+{'metric': 'quantile', 'window': 47, 'quant': 0.29999999999999999, 'corr': 0.78049876321229861, 'diff': 0, 'method': <function <lambda> at 0x7fa183b7cb90>}
+455203_ maxtemp
+{'metric': 'max', 'window': 45, 'quant': None, 'corr': -0.46985449872560825, 'diff': 1, 'method': <function <lambda> at 0x7fa180307398>}
+455203_dewp
+{'metric': 'quantile', 'window': 33, 'quant': 0.85000000000000009, 'corr': -0.58295963068664713, 'diff': 0, 'method': <function <lambda> at 0x7fa183b7c668>}
+455203_meanrh
+{'metric': 'sum', 'window': 39, 'quant': None, 'corr': -0.7107931960898588, 'diff': 52, 'method': <function <lambda> at 0x7fa1802fd6e0>}
+455203_meantemp
+{'metric': 'quantile', 'window': 47, 'quant': 0.15000000000000002, 'corr': 0.49340269454204677, 'diff': 1, 'method': <function <lambda> at 0x7fa1802fdb90>}
+455203_mintemp
+{'metric': 'min', 'window': 51, 'quant': None, 'corr': 0.60225378346646241, 'diff': 1, 'method': <function <lambda> at 0x7fa183b6d758>}
+455203_rain
+{'metric': 'quantile', 'window': 50, 'quant': 0.29999999999999999, 'corr': 0.71207869427663162, 'diff': 0, 'method': <function <lambda> at 0x7fa1803278c0>}
+455301_ maxtemp
+{'metric': 'range', 'window': 50, 'quant': None, 'corr': -0.62788320771043549, 'diff': 0, 'method': <function <lambda> at 0x7fa183b7cc08>}
+455301_dewp
+{'metric': 'range', 'window': 47, 'quant': None, 'corr': -0.72515753594606924, 'diff': 0, 'method': <function <lambda> at 0x7fa183b7cc80>}
+455301_meanrh
+{'metric': 'min', 'window': 49, 'quant': None, 'corr': 0.74060824547878501, 'diff': 0, 'method': <function <lambda> at 0x7fa183b6d410>}
+455301_meantemp
+{'metric': 'quantile', 'window': 51, 'quant': 0.10000000000000001, 'corr': 0.63934955777177149, 'diff': 1, 'method': <function <lambda> at 0x7fa183b6dc80>}
+455301_mintemp
+{'metric': 'max', 'window': 50, 'quant': None, 'corr': -0.62813847893398045, 'diff': 1, 'method': <function <lambda> at 0x7fa180327230>}
+455301_rain
+{'metric': 'quantile', 'window': 49, 'quant': 0.25, 'corr': 0.74983092389018313, 'diff': 0, 'method': <function <lambda> at 0x7fa18032f8c0>}
+
 Linear with diff + corr adjust
 -55.6078523291
 XGBR with diff + corr adjust
@@ -60,9 +98,9 @@ ElasticNet
 SVR
 -58.0191811011
 GBR
--55.5756830002
+-55.9866098824
 RFR
--53.2383521282
+-53.8063728462
 #######################################################
 #################7.ensemble model########################
 ensemble xgbR + elasticR
