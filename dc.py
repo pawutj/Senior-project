@@ -443,15 +443,16 @@ train = pd.concat([train,pd.DataFrame({'trend':train_trend}),train_y_diff],axis=
 #plt.show()
 
 train_forcorr = train.drop(['week','year','total_cases_adj','trend'],axis=1)
-'''
+print 'Corr method'
 train_adj = train
 
 for r in train_forcorr.columns[:-1]:
     best = best_corr(train_forcorr[r],train_forcorr['diff'])
+    print r
     print best
     train_adj[r] = best['method'](train_forcorr[r])
-'''
 
+print ''
 train_adj = pd.read_csv('train_adj.csv')
 
 #corrmat = train_adj.corr()
